@@ -13,8 +13,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <include layout="@layout/toolbar_login"/>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -26,15 +24,15 @@
                     android:layout_marginTop="12dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Welcome back!"
+                    android:text="Sign up!"
                     android:textColor="#3e4a59"
                     android:textSize="30sp"/>
 
                 <customfonts.MyTextView_Roboto_Regular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Email"
-                    android:textSize="15sp"
+                    android:hint="Create a new account:"
+                    android:textSize="18sp"
                     android:textColorHint="#3e4a59"
                     android:background="#00000000"
                     android:layout_marginTop="45dp"/>
@@ -44,7 +42,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:background="#00000000"
-                    android:hint="Enter Email ID"
+                    android:hint="Username"
                     android:textColorHint="#24272b"
                     android:textSize="15sp" />
 
@@ -57,25 +55,63 @@
                 <customfonts.EditText_Roboto_Regular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Password"
-                    android:textSize="15sp"
-                    android:textColorHint="#4b5461"
+                    android:layout_marginTop="22dp"
                     android:background="#00000000"
-                    android:layout_marginTop="35dp"/>
+                    android:hint="Password"
+                    android:textColorHint="#4b5461"
+                    android:textSize="15sp" />
+
                 <View
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="17dp"
                     android:layout_width="match_parent"
-                    android:layout_height="0.7dp"
-                    android:background="#d3dfef"/>
-                <customfonts.MyTextView_Roboto_Regular
-                    android:layout_weight="1"
-                    android:layout_gravity="right"
-                    android:layout_marginTop="14dp"
+                    android:layout_height="2dp"
+                    android:background="#c28e79"/>
+
+                <customfonts.EditText_Roboto_Regular
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Forgot password?"
-                    android:textColor="#b98068"
+                    android:layout_marginTop="28dp"
+                    android:background="#00000000"
+                    android:hint="Confirm Password"
+                    android:textColorHint="#4b5461"
                     android:textSize="15sp" />
+                <View
+                    android:layout_marginTop="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#c28e79"/>
+
+                <customfonts.EditText_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:background="#00000000"
+                    android:hint="Email"
+                    android:textColorHint="#4b5461"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_marginTop="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#c28e79"/>
+
+                <customfonts.EditText_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:background="#00000000"
+                    android:hint="Phone number"
+                    android:textColorHint="#4b5461"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_marginTop="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#c28e79"/>
+
+
 
             </LinearLayout>
 
@@ -116,6 +152,13 @@
                 android:text="Register"
                 android:textSize="14sp"
                 android:textColor="#b98068"/>
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date" />
 
         </LinearLayout>
 
