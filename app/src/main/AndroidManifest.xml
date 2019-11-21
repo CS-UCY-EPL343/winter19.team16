@@ -13,14 +13,16 @@
         <activity android:name=".AboutUs" />
         <activity
             android:name=".SignUp"
+
             android:label="@string/title_activity_sign_up" />
+		</activity>
         <activity android:name=".MainActivity">
+            android:label="@string/title_activity_sign_up">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
     </application>
 
 </manifest>
