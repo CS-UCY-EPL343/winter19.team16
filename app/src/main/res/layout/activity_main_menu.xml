@@ -6,81 +6,74 @@
     android:layout_height="match_parent"
     tools:context=".MainMenu">
 
-    <Button
-        android:id="@+id/order4"
-        style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
-        android:layout_width="300"
-        android:layout_height="100"
-        android:background="#FFFFFF"
+    <customfonts.MyTextView_Roboto_Regular
+        android:id="@+id/myTextView_Roboto_Regular4"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rect1"
         android:capitalize="words"
-        android:shadowColor="#1D1A1A"
-        android:text="CREDIT"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@android:color/background_dark"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="528dp" />
+        android:editable="false"
+        android:gravity="center|center_horizontal"
+        android:text="About Us"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#ffffff"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="558dp" />
 
-    <Button
-        android:id="@+id/order3"
-        style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
-        android:layout_width="300"
-        android:layout_height="100"
-        android:background="#FFFFFF"
+    <customfonts.MyTextView_Roboto_Regular
+        android:id="@+id/myTextView_Roboto_Regular3"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rect1"
         android:capitalize="words"
-        android:shadowColor="#1D1A1A"
-        android:text="HISTORY"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@android:color/background_dark"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="347dp" />
+        android:editable="false"
+        android:gravity="center|center_horizontal"
+        android:text="Credit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#ffffff"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="449dp" />
 
-    <Button
-        android:id="@+id/Order"
-        style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
-        android:layout_width="300"
-        android:layout_height="100"
-        android:background="#FFFFFF"
+    <customfonts.MyTextView_Roboto_Regular
+        android:id="@+id/myTextView_Roboto_Regular2"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rect1"
         android:capitalize="words"
-        android:shadowColor="#1D1A1A"
-        android:text="ORDER"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@android:color/background_dark"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="164dp" />
+        android:editable="false"
+        android:gravity="center|center_horizontal"
+        android:text="History"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#ffffff"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="334dp" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="100"
-        android:layout_height="100"
-        app:srcCompat="@mipmap/circle-history_round"
+    <customfonts.MyTextView_Roboto_Regular
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rect1"
+        android:capitalize="words"
+        android:editable="false"
+        android:gravity="center|center_horizontal"
+        android:text="Menu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#ffffff"
+        android:textSize="36sp"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="164dp" />
+        tools:layout_editor_absoluteY="219dp" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="100"
-        android:layout_height="100"
-        app:srcCompat="@mipmap/circle-history_round"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="347dp" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="100"
-        android:layout_height="100"
-        app:srcCompat="@mipmap/circle-points_round"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="528dp" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="200"
-        android:layout_height="100"
-        app:srcCompat="@mipmap/circle-logo_foreground"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="16dp" />
-
+        android:id="@+id/imageView9"
+        android:layout_width="800dp"
+        android:layout_height="500dp"
+        app:srcCompat="@mipmap/logo_foreground"
+        tools:layout_editor_absoluteX="-195dp"
+        tools:layout_editor_absoluteY="-166dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
