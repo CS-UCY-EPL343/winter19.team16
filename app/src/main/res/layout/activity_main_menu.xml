@@ -6,81 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".MainMenu">
 
-    <Button
-        android:id="@+id/order4"
-        style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
-        android:layout_width="300"
-        android:layout_height="100"
-        android:background="#FFFFFF"
+    <customfonts.MyTextView_Roboto_Regular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_merginLeft="25dp"
+        android:layout_merginRight="20dp"
+        android:background="@drawable/rect1"
         android:capitalize="words"
-        android:shadowColor="#1D1A1A"
-        android:text="CREDIT"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@android:color/background_dark"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="528dp" />
-
-    <Button
-        android:id="@+id/order3"
-        style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
-        android:layout_width="300"
-        android:layout_height="100"
-        android:background="#FFFFFF"
-        android:capitalize="words"
-        android:shadowColor="#1D1A1A"
-        android:text="HISTORY"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@android:color/background_dark"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="347dp" />
-
-    <Button
-        android:id="@+id/Order"
-        style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
-        android:layout_width="300"
-        android:layout_height="100"
-        android:background="#FFFFFF"
-        android:capitalize="words"
-        android:shadowColor="#1D1A1A"
-        android:text="ORDER"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@android:color/background_dark"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="164dp" />
+        android:editable="false"
+        android:gravity="center|center_horizontal"
+        android:text="Menu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#ffffff"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="256dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="100"
-        android:layout_height="100"
-        app:srcCompat="@mipmap/circle-history_round"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="164dp" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="100"
-        android:layout_height="100"
-        app:srcCompat="@mipmap/circle-history_round"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="347dp" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="100"
-        android:layout_height="100"
-        app:srcCompat="@mipmap/circle-points_round"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="528dp" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="200"
-        android:layout_height="100"
-        app:srcCompat="@mipmap/circle-logo_foreground"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="16dp" />
-
+        android:id="@+id/imageView8"
+        android:layout_width="400"
+        android:layout_height="300"
+        app:srcCompat="@mipmap/logo"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="-54dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
