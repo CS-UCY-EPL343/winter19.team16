@@ -8,11 +8,9 @@
 
     <customfonts.MyTextView_Roboto_Regular
         android:id="@+id/myTextView_Roboto_Regular4"
-        android:layout_width="370"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_merginLeft="25dp"
-        android:layout_merginRight="20dp"
         android:background="@drawable/rect1"
         android:capitalize="words"
         android:editable="false"
@@ -26,11 +24,9 @@
 
     <customfonts.MyTextView_Roboto_Regular
         android:id="@+id/myTextView_Roboto_Regular3"
-        android:layout_width="370"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_merginLeft="25dp"
-        android:layout_merginRight="20dp"
         android:background="@drawable/rect1"
         android:capitalize="words"
         android:editable="false"
@@ -44,11 +40,9 @@
 
     <customfonts.MyTextView_Roboto_Regular
         android:id="@+id/myTextView_Roboto_Regular2"
-        android:layout_width="370"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_merginLeft="25dp"
-        android:layout_merginRight="20dp"
         android:background="@drawable/rect1"
         android:capitalize="words"
         android:editable="false"
@@ -61,11 +55,9 @@
         tools:layout_editor_absoluteY="334dp" />
 
     <customfonts.MyTextView_Roboto_Regular
-        android:layout_width="370"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_merginLeft="25dp"
-        android:layout_merginRight="20dp"
         android:background="@drawable/rect1"
         android:capitalize="words"
         android:editable="false"
@@ -79,8 +71,8 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="800"
-        android:layout_height="500"
+        android:layout_width="800dp"
+        android:layout_height="500dp"
         app:srcCompat="@mipmap/logo_foreground"
         tools:layout_editor_absoluteX="-195dp"
         tools:layout_editor_absoluteY="-166dp" />

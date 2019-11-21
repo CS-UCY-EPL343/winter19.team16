@@ -20,7 +20,7 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp">
 
-                <customfonts.MyTextView_Roboto_Regular
+                <TextView
                     android:layout_marginTop="12dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
                     android:textColor="#3e4a59"
                     android:textSize="30sp"/>
 
-                <customfonts.MyTextView_Roboto_Regular
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="Create a new account:"
@@ -37,7 +37,7 @@
                     android:background="#00000000"
                     android:layout_marginTop="45dp"/>
 
-                <customfonts.EditText_Roboto_Regular
+                <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -52,7 +52,7 @@
                     android:layout_height="2dp"
                     android:background="#c28e79"/>
 
-                <customfonts.EditText_Roboto_Regular
+                <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="22dp"
@@ -67,7 +67,7 @@
                     android:layout_height="2dp"
                     android:background="#c28e79"/>
 
-                <customfonts.EditText_Roboto_Regular
+                <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="28dp"
@@ -81,7 +81,7 @@
                     android:layout_height="2dp"
                     android:background="#c28e79"/>
 
-                <customfonts.EditText_Roboto_Regular
+                <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="28dp"
@@ -96,7 +96,7 @@
                     android:layout_height="2dp"
                     android:background="#c28e79"/>
 
-                <customfonts.EditText_Roboto_Regular
+                <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="28dp"
@@ -127,7 +127,7 @@
             android:layout_marginBottom="10dp"
             android:orientation="vertical">
 
-            <customfonts.MyTextView_Roboto_Regular
+            <TextView
                 android:layout_gravity="bottom"
                 android:gravity="center"
                 android:layout_marginTop="15dp"
@@ -137,7 +137,7 @@
                 android:textSize="15sp"
                 android:textColor="#ffffff"
                 android:background="@drawable/rect1"/>
-            <customfonts.MyTextView_Roboto_Regular
+            <TextView
                 android:gravity="center"
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
@@ -145,7 +145,7 @@
                 android:text="Don’t have an account?"
                 android:textColor="#733e4a59"
                 android:textSize="14sp"/>
-            <customfonts.MyTextView_Roboto_Regular
+            <TextView
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
