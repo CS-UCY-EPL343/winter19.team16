@@ -70,9 +70,10 @@
             android:id="@+id/button4"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:background="@drawable/rectBrown"
+            android:layout_height="80dp"
+            android:background="@drawable/rect1"
             android:text="Button"
+            android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline4" />
