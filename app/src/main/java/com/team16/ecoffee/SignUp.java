@@ -46,7 +46,7 @@ public class SignUp extends AppCompatActivity {
                 picker.show();
             }
         });
-        btnGet = (Button) findViewById(R.id.button1);
+        btnGet = (Button) findViewById(R.id.radioButton1);
         btnGet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
