@@ -11,6 +11,10 @@ Cold coffee icon  made by Linector from www.flaticon.com-->
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Feedback"
+                    android:exported="true"
+            ></activity>
+
 
         <activity android:name=".orderActivity"></activity>
         <activity
@@ -19,7 +23,11 @@ Cold coffee icon  made by Linector from www.flaticon.com-->
             android:label="@string/title_activity_sign_up" />
         <activity
             android:name=".Aboutus"
-            android:exported="true">
+
+            android:exported="true"></activity>
+        
+
+            
 
         </activity>
 	<activity
@@ -33,7 +41,7 @@ Cold coffee icon  made by Linector from www.flaticon.com-->
         <activity
             android:name=".MainMenu"
             android:exported="true"
-            android:label="MainMenu"></activity>
+            android:label="MainMenu" />
     </application>
 
 </manifest>
