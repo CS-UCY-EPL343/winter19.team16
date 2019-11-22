@@ -7,7 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.Calendar;
 
 import androidx.appcompat.app.ActionBar;
@@ -24,7 +28,7 @@ public class SignUp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.settings_activity);
         tvw = (TextView) findViewById(R.id.textView1);
         eText = (EditText) findViewById(R.id.editText1);
         eText.setInputType(InputType.TYPE_NULL);
@@ -46,15 +50,21 @@ public class SignUp extends AppCompatActivity {
                 picker.show();
             }
         });
-        btnGet = (Button) findViewById(R.id.radioButton1);
-        btnGet.setOnClickListener(new View.OnClickListener() {
+        final RadioGroup rbg=(RadioGroup) findViewById(R.id.radioGroup1);
+
+        Button btn=(Button) findViewById(R.id.radioButton1);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+
             @Override
-            public void onClick(View v) {
-                tvw.setText("Selected Date: " + eText.getText());
+            public void onClick(View arg0) {
+                // TODO Auto-generated method stub
+
+                int selected=rbg.getCheckedRadioButtonId();
+                RadioButton gender=(RadioButton) findViewById(selected);
+                Toast.makeText(getApplicationContext(),gender.getText(),2500).show();
             }
         });
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.settings_activity);
 
     }
 
