@@ -9,14 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Aboutus"></activity>
+        <activity android:name=".activity_history"></activity>
+        <activity android:name=".Aboutus" />
         <activity
             android:name=".order_menu"
-            android:label="@string/title_activity_order_menu"></activity>
+            android:label="@string/title_activity_order_menu" />
         <activity
             android:name=".SignUp"
             android:exported="true"
-            android:label="@string/title_activity_sign_up"></activity>
+            android:label="@string/title_activity_sign_up" />
         <activity android:name=".AboutUs2" />
         <activity
             android:name=".MainActivity"
@@ -30,7 +31,7 @@
         <activity
             android:name=".MainMenu"
             android:exported="true"
-            android:label="MainMenu"></activity>
+            android:label="MainMenu" />
     </application>
 
 </manifest>

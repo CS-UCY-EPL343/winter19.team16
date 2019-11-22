@@ -5,4 +5,22 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="Euros" parent="android:Widget.TextView">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="Sub_Text" parent="android:Widget.TextView">
+        <item name="android:textColor">#D8CDCD</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Paragraph" parent="android:Widget.TextView">
+        <item name="android:textColor">#343d41</item>
+        <item name="android:textSize">11.5dp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+
 </resources>
