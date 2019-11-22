@@ -9,18 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Aboutus"></activity>
         <activity
             android:name=".order_menu"
-            android:label="@string/title_activity_order_menu">
-        </activity>
+            android:label="@string/title_activity_order_menu"></activity>
         <activity
             android:name=".SignUp"
-            android:label="@string/title_activity_sign_up"
-            android:exported="true">
-        </activity>
-        <activity android:name=".AboutUs2"></activity>
-
-        <activity android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_sign_up"></activity>
+        <activity android:name=".AboutUs2" />
+        <activity
+            android:name=".MainActivity"
             android:label="MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,8 +29,8 @@
         </activity>
         <activity
             android:name=".MainMenu"
-            android:label="MainMenu"
-            android:exported="true">
-        </activity>
+            android:exported="true"
+            android:label="MainMenu"></activity>
     </application>
+
 </manifest>
