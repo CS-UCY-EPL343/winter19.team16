@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".order_menu"
-            android:label="@string/title_activity_order_menu"></activity>
+        android:label="@string/title_activity_order_menu"></activity>
 
         <activity
             android:name=".SignUp"
