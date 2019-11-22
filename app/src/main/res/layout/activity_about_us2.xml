@@ -7,75 +7,92 @@
     android:background="#00050505"
     tools:context=".AboutUs2">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="850dp"
-        android:layout_height="900dp"
-        app:srcCompat="@mipmap/about_foreground"
-        tools:layout_editor_absoluteX="-220dp"
-        tools:layout_editor_absoluteY="165dp" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="400dp"
-        android:layout_height="100dp"
-        android:text="Our goal is to provide an unparalleled taste and aesthetic experience to the consumer, excellent and consistent quality in all stores and carefully selected products and new varieties of coffee, covering our most demanding customers."
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="444dp" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="400dp"
-        android:layout_height="100dp"
-        android:text="These foundations were based on the search and unique choices we offer exclusively in all of our stores. "
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="397dp" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="400dp"
-        android:layout_height="100dp"
-        android:text='We identified with coffee distribution, and with more than 15 years of experience and know-how in the precious bean production process, we can say we "know & love" coffee.'
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="332dp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="400dp"
-        android:layout_height="100dp"
-        android:text="The key ingredients of this creation are the excellent product we offer, the diversified design concept of our stores and the highly trained staff. tores in Greece, Cyprus and Egypt, and ongoing deals for overseas markets, the impressive expansion of COFFEE BERRY's network of stores in just 4 years is the result of hard work, strategy and know-how."
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="209dp" />
-
-    <View
-        android:id="@+id/view"
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#c28e79"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="105dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.team16.ecoffee.SignUp">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:text="About Us"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        app:drawableTint="#F50F0F0F"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="35dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="400dp"
-        android:layout_height="100dp"
-        android:text="With more than 120 stores in Greece, Cyprus and Egypt, and ongoing deals for overseas markets, the impressive expansion of COFFEE BERRY's network of stores in just 4 years is the result of hard work, strategy and know-how."
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="123dp" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="850dp"
+            android:layout_height="900dp"
+            app:srcCompat="@mipmap/about_foreground"
+            tools:layout_editor_absoluteX="-220dp"
+            tools:layout_editor_absoluteY="165dp" />
+
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:text="These foundations were based on the search and unique choices we offer exclusively in all of our stores. "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="397dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:text='We identified with coffee distribution, and with more than 15 years of experience and know-how in the precious bean production process, we can say we "know & love" coffee.'
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="332dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:text="The key ingredients of this creation are the excellent product we offer, the diversified design concept of our stores and the highly trained staff. tores in Greece, Cyprus and Egypt, and ongoing deals for overseas markets, the impressive expansion of COFFEE BERRY's network of stores in just 4 years is the result of hard work, strategy and know-how."
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="209dp" />
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:text="About Us"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            app:drawableTint="#F50F0F0F"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="35dp" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c28e79"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="105dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:text="With more than 120 stores in Greece, Cyprus and Egypt, and ongoing deals for overseas markets, the impressive expansion of COFFEE BERRY's network of stores in just 4 years is the result of hard work, strategy and know-how."
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="123dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:text="Our goal is to provide an unparalleled taste and aesthetic experience to the consumer, excellent and consistent quality in all stores and carefully selected products and new varieties of coffee, covering our most demanding customers."
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="444dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
