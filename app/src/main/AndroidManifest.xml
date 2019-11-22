@@ -11,7 +11,10 @@ Cold coffee icon  made by Linector from www.flaticon.com-->
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".orderActivity"></activity>
+        <activity
+            android:name=".orderActivity"
+            android:label="orderActivity">
+        </activity>
         <activity
             android:name=".SignUp"
             android:exported="true"
