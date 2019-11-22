@@ -20,6 +20,11 @@
 
 
         <activity
+            android:name=".activity_history"
+            android:exported="true"
+            android:label="@string/title_activity_sign_up"></activity>
+
+        <activity
             android:name=".Aboutus"
             android:exported="true">
 

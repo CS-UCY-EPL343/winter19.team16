@@ -31,6 +31,16 @@
                     tools:layout_editor_absoluteX="-195dp"
                     tools:layout_editor_absoluteY="-166dp" />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:text="Orders History"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
             </LinearLayout>
 
 
@@ -45,24 +55,68 @@
                 android:paddingTop="25dp"
                 android:paddingRight="18dp">
 
-                <customfonts.MyTextView_Roboto_Regular
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="€5.00"
-                    android:theme="@style/Euros" />
+                    android:layout_marginTop="10dp"
+                    android:text="Freddo Espresso, Freddo Capuccino"
+                    android:paddingBottom="10dp"
+                    android:textAppearance="@style/Product" />
 
-                <customfonts.MyTextView_Roboto_Regular
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="€4.50"
+                    android:theme="@style/Price"
+                    android:textAppearance="@style/Price" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="right"
+                    android:paddingBottom="25dp"
+                    android:text="4 hours ago"
+                    android:textAppearance="@style/Date" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle"
+                android:orientation="vertical"
+                android:paddingLeft="18dp"
+                android:paddingTop="25dp"
+                android:paddingRight="18dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Freddo Capuccino"
+                    android:paddingBottom="10dp"
+                    android:textAppearance="@style/Product" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="€2.50"
+                    android:theme="@style/Price"
+                    android:textAppearance="@style/Price" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:gravity="right"
                     android:paddingBottom="25dp"
                     android:text="2 days ago"
-                    android:theme="@style/Sub_Text" />
-
+                    android:textAppearance="@style/Date" />
 
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -74,28 +128,65 @@
                 android:paddingTop="25dp"
                 android:paddingRight="18dp">
 
-                <customfonts.MyTextView_Roboto_Regular
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="€2.50"
-                    android:theme="@style/Euros" />
-
-                <customfonts.MyTextView_Roboto_Regular
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Freddo Espresso"
-                    android:theme="@style/Paragraph" />
+                    android:text="Freddo Espresso, Apple Pie"
+                    android:paddingBottom="10dp"
+                    android:textAppearance="@style/Product" />
 
-                <customfonts.MyTextView_Roboto_Regular
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="€3.50"
+                    android:theme="@style/Price"
+                    android:textAppearance="@style/Price" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:gravity="right"
                     android:paddingBottom="25dp"
-                    android:text="3 days ago"
-                    android:theme="@style/Sub_Text" />
+                    android:text="5 days ago"
+                    android:textAppearance="@style/Date" />
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle"
+                android:orientation="vertical"
+                android:paddingLeft="18dp"
+                android:paddingTop="25dp"
+                android:paddingRight="18dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Freddo Espresso"
+                    android:paddingBottom="10dp"
+                    android:textAppearance="@style/Product" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="€2.10"
+                    android:theme="@style/Price"
+                    android:textAppearance="@style/Price" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="right"
+                    android:paddingBottom="25dp"
+                    android:text="10 November 2019"
+                    android:textAppearance="@style/Date" />
 
             </LinearLayout>
 
