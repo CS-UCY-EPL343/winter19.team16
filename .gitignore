@@ -12,3 +12,11 @@
 /captures
 .externalNativeBuild
 .cxx
+app/local.properties
+app/.idea/workspace.xml
+app/.idea/vcs.xml
+app/.idea/runConfigurations.xml
+app/.idea/misc.xml
+app/.idea/gradle.xml
+app/.idea/codeStyles/Project.xml
+app/.idea/modules.xml
