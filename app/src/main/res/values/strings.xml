@@ -19,4 +19,8 @@
     <string name="title_activity_order_menu">order_menu</string>
     <string name="title_home">Home</string>
     <string name="title_checkout">Checkout</string>
+    <string name="total">Total: €1.90</string>
+    <string name="preferences">Menu</string>
+    <string name="back">back</string>
+    <string name="checkout">checkout</string>
 </resources>
