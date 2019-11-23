@@ -4,6 +4,18 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorControlActivated">#DA5C00</item>
+        <item name="android:spinnerItemStyle">@style/spinnerItemStyle</item>
+        <item name="android:spinnerDropDownItemStyle">@style/spinnerDropDownItemStyle</item>
+    </style>
+
+    <style name="spinnerItemStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/my_spinner_text_color</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/my_spinner_text_color</item>
     </style>
 
     <style name="Price" parent="android:Widget.TextView">
@@ -25,4 +37,5 @@
     </style>
 
 
+    <color name="my_spinner_text_color">#000000</color>
 </resources>

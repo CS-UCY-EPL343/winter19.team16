@@ -6,24 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".orderActivity">
 
-    <ImageButton
-        android:id="@+id/back_button"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="#FFFFFF"
-        android:contentDescription="@string/back"
-        app:layout_constraintBottom_toTopOf="@+id/coffee_layout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_chevron_left_black_24dp" />
-
     <TextView
         android:id="@+id/preferences"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@color/white"
         android:clickable="false"
         android:gravity="center"
-        android:text="@string/preferences"
+        android:text="@string/item_menu"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#000000"
         android:textIsSelectable="false"
@@ -35,6 +25,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/back"
+        app:layout_constraintBottom_toTopOf="@+id/coffee_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_chevron_left_black_24dp" />
 
     <ImageButton
         android:id="@+id/checkout"
@@ -52,6 +53,7 @@
         android:id="@+id/coffee_layout"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@color/white"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/total"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,8 +68,8 @@
             android:layout_height="80dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/rect1"
-            android:drawableLeft="@drawable/ic_capuccino"
             android:drawableStart="@drawable/ic_capuccino"
+            android:drawableLeft="@drawable/ic_capuccino"
             android:gravity="center"
             android:text="@string/capuccino"
             android:textColor="#FFFFFF"
@@ -94,28 +96,37 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/frappe_button" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline4"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_begin="50dp" />
-
         <Button
             android:id="@+id/frappe_button"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="0dp"
             android:layout_height="80dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/rect1"
+
             android:drawableStart="@drawable/ic_iced_coffee"
             android:drawableLeft="@drawable/ic_iced_coffee"
-
             android:gravity="center"
             android:text="@string/frappe"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline4" />
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="305dp"
+            android:layout_height="131dp"
+
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/logo"
+
+            app:layout_constraintBottom_toTopOf="@+id/frappe_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/logo" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -123,6 +134,8 @@
         android:id="@+id/total"
         android:layout_width="0dp"
         android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center"
         android:text="@string/total"
         android:textColor="#000000"
         android:textSize="30sp"
@@ -130,7 +143,6 @@
         app:layout_constraintBottom_toTopOf="@+id/checkout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/coffee_layout"
-        android:gravity="center"/>
+        app:layout_constraintTop_toBottomOf="@id/coffee_layout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

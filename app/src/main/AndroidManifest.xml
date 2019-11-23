@@ -47,6 +47,9 @@ Cold coffee icon  made by Linector from www.flaticon.com-->
             android:name=".MainMenu"
             android:exported="true"
             android:label="MainMenu" />
+        <activity
+            android:name=".customizeDrinkActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>
