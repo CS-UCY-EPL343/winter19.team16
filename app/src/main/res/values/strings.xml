@@ -24,8 +24,8 @@
     <string name="back">back</string>
     <string name="checkout">checkout</string>
     <string name="frappe">Frappe</string>
-    <string name="freddo_espresso">Freddo espresso</string>
-    <string name="capuccino">capuccino</string>
+    <string name="freddo_espresso">Freddo Espresso</string>
+    <string name="capuccino">Capuccino</string>
     <string name="preferences">Preferences</string>
     <string name="price">€1.90</string>
     <string name="logo">logo</string>

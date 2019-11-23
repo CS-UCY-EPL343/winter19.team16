@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="#ffffff"
+    android:theme="@android:style/Theme.Dialog"
     tools:context="com.team16.ecoffee.customizeDrinkActivity">
 
 
@@ -39,12 +40,14 @@
                     android:id="@+id/preferences"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_weight="2"
                     android:gravity="center"
                     android:text="@string/preferences"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textSize="30dp"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
                     android:textStyle="bold" />
+
             </LinearLayout>
 
 
@@ -247,10 +250,16 @@
 
         <Spinner
             android:id="@+id/blend_spinner"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:entries="@array/blends" />
+            android:background="@color/white"
+            android:dropDownWidth="wrap_content"
+            android:entries="@array/blends"
+            android:spinnerMode="dropdown"
+            android:theme = "@style/spinnerTheme"/>
 
     </LinearLayout>
 
