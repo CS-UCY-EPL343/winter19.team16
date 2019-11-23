@@ -10,11 +10,13 @@ Cold coffee icon  made by Linector from www.flaticon.com-->
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Feedback"
+                    android:exported="true"/>
+        <activity android:name=".orderActivity"/>
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-<!--        <activity android:name=".Feedback"-->
-<!--                    android:exported="true"-->
-<!--            ></activity>-->
 
 
         <activity
@@ -28,13 +30,10 @@ Cold coffee icon  made by Linector from www.flaticon.com-->
         <activity
             android:name=".activity_history"
             android:exported="true"
-            android:label="@string/title_activity_sign_up">
-
-        </activity>
+            android:label="@string/title_activity_sign_up"/>
         <activity
             android:name=".Aboutus"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
 	    <activity
             android:name=".MainActivity"
             android:label="MainActivity">
