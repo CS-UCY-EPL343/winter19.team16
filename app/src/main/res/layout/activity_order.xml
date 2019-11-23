@@ -59,6 +59,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/back_button">
 
+        <Button
+            android:id="@+id/capuccino_button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rect1"
+            android:drawableLeft="@drawable/ic_capuccino"
+            android:drawableStart="@drawable/ic_capuccino"
+            android:gravity="center"
+            android:text="@string/capuccino"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/freddo_button" />
+
+        <Button
+            android:id="@+id/freddo_button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rect1"
+            android:drawableStart="@drawable/ic_freddo"
+
+            android:drawableLeft="@drawable/ic_freddo"
+            android:gravity="center"
+            android:text="@string/freddo_espresso"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frappe_button" />
+
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline4"
             android:layout_width="wrap_content"
@@ -67,16 +102,21 @@
             app:layout_constraintGuide_begin="50dp" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/frappe_button"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:background="@drawable/rect1"
-            android:text="Button"
+            android:drawableStart="@drawable/ic_iced_coffee"
+            android:drawableLeft="@drawable/ic_iced_coffee"
+
+            android:gravity="center"
+            android:text="@string/frappe"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
