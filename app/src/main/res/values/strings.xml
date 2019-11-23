@@ -20,7 +20,10 @@
     <string name="title_home">Home</string>
     <string name="title_checkout">Checkout</string>
     <string name="total">Total: €1.90</string>
-    <string name="preferences">Menu</string>
+    <string name="preferences">Item Menu</string>
     <string name="back">back</string>
     <string name="checkout">checkout</string>
+    <string name="frappe">Frappe</string>
+    <string name="freddo_espresso">freddo espresso</string>
+    <string name="capuccino">capuccino</string>
 </resources>

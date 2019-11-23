@@ -2,6 +2,7 @@
 <!--Acknowledgement:
 Cold coffee icon  made by Linector from www.flaticon.com-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.team16.ecoffee">
 
     <application
@@ -9,14 +10,17 @@ Cold coffee icon  made by Linector from www.flaticon.com-->
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Feedback"
-                    android:exported="true"
-            ></activity>
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+<!--        <activity android:name=".Feedback"-->
+<!--                    android:exported="true"-->
+<!--            ></activity>-->
 
 
-        <activity android:name=".orderActivity"></activity>
+        <activity
+            android:name=".orderActivity"
+            android:exported="true">
+        </activity>
         <activity
             android:name=".SignUp"
             android:exported="true"
@@ -24,18 +28,14 @@ Cold coffee icon  made by Linector from www.flaticon.com-->
         <activity
             android:name=".activity_history"
             android:exported="true"
-            android:label="@string/title_activity_sign_up"></activity>
-
-        <activity
-            android:name=".Aboutus"
-
-            android:exported="true"></activity>
-        
-
-            
+            android:label="@string/title_activity_sign_up">
 
         </activity>
-	<activity
+        <activity
+            android:name=".Aboutus"
+            android:exported="true">
+        </activity>
+	    <activity
             android:name=".MainActivity"
             android:label="MainActivity">
             <intent-filter>
