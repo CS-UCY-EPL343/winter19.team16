@@ -13,4 +13,10 @@
         <item>Flavor</item>
         <item>Premium</item>
     </string-array>
+    <string-array name="milk">
+        <item>None</item>
+        <item>&#188;</item>
+        <item>&#189;</item>
+        <item>Full</item>
+    </string-array>
 </resources>

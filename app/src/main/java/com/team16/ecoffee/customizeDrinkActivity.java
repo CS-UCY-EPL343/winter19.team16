@@ -3,21 +3,29 @@ package com.team16.ecoffee;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class customizeDrinkActivity extends AppCompatActivity implements View.OnClickListener {
     ImageView img1,img2,img3,img4,img5,img6,img7;
     ImageButton add,remove;
-
+    TextView quantity, total_price, type;
+    int count = 1;
+    double price = 1.90;
+    double total = 1.90;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_customize__drink__main);
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
+        if (getIntent().getStringExtra("coffee").equals("frappe"))
+            setContentView(R.layout.activity_customize_frappe);
+        else
+            setContentView(R.layout.activity_customize_freddo);
 
         img1=findViewById(R.id.img1);
         img2=findViewById(R.id.img2);
@@ -28,6 +36,11 @@ public class customizeDrinkActivity extends AppCompatActivity implements View.On
         img7=findViewById(R.id.img7);
         add=findViewById((R.id.add));
         remove=findViewById(R.id.remove);
+        quantity = findViewById(R.id.quantity);
+        total_price = findViewById(R.id.total_price);
+        type = findViewById(R.id.coffee_type);
+        if (getIntent().getStringExtra("coffee").equals("capp"))
+            type.setText("Cappuccino");
 
         img1.setOnClickListener(this);
         img2.setOnClickListener(this);
@@ -36,7 +49,8 @@ public class customizeDrinkActivity extends AppCompatActivity implements View.On
         img5.setOnClickListener(this);
         img6.setOnClickListener(this);
         img7.setOnClickListener(this);
-
+        add.setOnClickListener(this);
+        remove.setOnClickListener(this);
     }
 
     @Override
@@ -94,8 +108,21 @@ public class customizeDrinkActivity extends AppCompatActivity implements View.On
                 img4.setImageResource(R.drawable.ic_group_4_copy_4_1);
                 break;
 
+            case R.id.add:
+                count++;
+                total = price*count;
+                quantity.setText(Integer.toString(count));
+                total_price.setText(String.format("€%.2f",total));
+                break;
 
-
+            case R.id.remove:
+                if (count <= 1)
+                    break;
+                count--;
+                total = price*count;
+                quantity.setText(Integer.toString(count));
+                total_price.setText(String.format("€%.2f",total));
+                break;
         }
     }
 }

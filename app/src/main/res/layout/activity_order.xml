@@ -2,29 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".orderActivity">
-
-    <TextView
-        android:id="@+id/preferences"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/white"
-        android:clickable="false"
-        android:gravity="center"
-        android:text="@string/item_menu"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#000000"
-        android:textIsSelectable="false"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/coffee_layout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
         android:id="@+id/back_button"
@@ -32,9 +13,10 @@
         android:layout_height="50dp"
         android:background="#FFFFFF"
         android:contentDescription="@string/back"
-        app:layout_constraintBottom_toTopOf="@+id/coffee_layout"
+        app:layout_constraintBottom_toTopOf="@+id/item_scroll"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_chevron_left_black_24dp" />
 
     <ImageButton
@@ -47,88 +29,96 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_shopping_cart_black_24dp"></ImageButton>
+        app:srcCompat="@drawable/ic_shopping_cart_black_24dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/coffee_layout"
-        android:layout_width="0dp"
+    </ImageButton>
+
+    <ScrollView
+        android:id="@+id/item_scroll"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/white"
-        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/total"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/back_button">
+        app:layout_constraintTop_toBottomOf="@id/preferences">
 
-        <Button
-            android:id="@+id/capuccino_button"
-            style="@style/Widget.AppCompat.Button"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/rect1"
-            android:drawableStart="@drawable/ic_capuccino"
-            android:drawableLeft="@drawable/ic_capuccino"
-            android:gravity="center"
-            android:text="@string/capuccino"
-            android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/freddo_button" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/coffee_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/freddo_button"
-            style="@style/Widget.AppCompat.Button"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/rect1"
-            android:drawableStart="@drawable/ic_freddo"
+            <Button
+                android:id="@+id/capuccino_button"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rect1"
+                android:drawableStart="@drawable/ic_capuccino"
+                android:drawableLeft="@drawable/ic_capuccino"
+                android:gravity="center"
+                android:text="@string/cappuccino"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/freddo_button" />
 
-            android:drawableLeft="@drawable/ic_freddo"
-            android:gravity="center"
-            android:text="@string/freddo_espresso"
-            android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frappe_button" />
+            <Button
+                android:id="@+id/freddo_button"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rect1"
+                android:drawableStart="@drawable/ic_freddo"
 
-        <Button
-            android:id="@+id/frappe_button"
-            style="@style/Widget.AppCompat.Button"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/rect1"
+                android:drawableLeft="@drawable/ic_freddo"
+                android:gravity="center"
+                android:text="@string/freddo_espresso"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frappe_button" />
 
-            android:drawableStart="@drawable/ic_iced_coffee"
-            android:drawableLeft="@drawable/ic_iced_coffee"
-            android:gravity="center"
-            android:text="@string/frappe"
-            android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/logo" />
+            <Button
+                android:id="@+id/frappe_button"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rect1"
 
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="305dp"
-            android:layout_height="131dp"
+                android:drawableStart="@drawable/ic_iced_coffee"
+                android:drawableLeft="@drawable/ic_iced_coffee"
+                android:gravity="center"
+                android:text="@string/frappe"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logo" />
 
-            android:layout_marginBottom="20dp"
-            android:contentDescription="@string/logo"
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="305dp"
+                android:layout_height="131dp"
 
-            app:layout_constraintBottom_toTopOf="@+id/frappe_button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/logo" />
+                android:layout_marginBottom="20dp"
+                android:contentDescription="@string/logo"
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                app:layout_constraintBottom_toTopOf="@+id/frappe_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/logo" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
     <TextView
         android:id="@+id/total"
@@ -142,7 +132,24 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/checkout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/coffee_layout" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/preferences"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="@string/item_menu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textIsSelectable="false"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/back_button"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

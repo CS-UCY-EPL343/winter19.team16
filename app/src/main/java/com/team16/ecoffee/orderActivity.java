@@ -14,9 +14,27 @@ public class orderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
         Button freddoButton = findViewById(R.id.freddo_button);
+        Button frappeButton = findViewById(R.id.frappe_button);
+        Button cappButton = findViewById(R.id.capuccino_button);
         freddoButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(orderActivity.this, customizeDrinkActivity.class));
+                Intent intent = new Intent(orderActivity.this, customizeDrinkActivity.class);
+                intent.putExtra("coffee","freddo");
+                startActivity(intent);
+            }
+        });
+        frappeButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(orderActivity.this, customizeDrinkActivity.class);
+                intent.putExtra("coffee","frappe");
+                startActivity(intent);
+            }
+        });
+        cappButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(orderActivity.this, customizeDrinkActivity.class);
+                intent.putExtra("coffee","capp");
+                startActivity(intent);
             }
         });
     }
