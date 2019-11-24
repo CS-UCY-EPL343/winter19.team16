@@ -32,7 +32,7 @@
 
     <style name="Date" parent="android:Widget.TextView">
         <item name="android:textColor">#FFFFFF</item>
-        <item name="android:textSize">11.5sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:lineSpacingExtra">2dp</item>
     </style>
 
