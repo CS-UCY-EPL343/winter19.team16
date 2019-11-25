@@ -1,10 +1,13 @@
 package com.team16.ecoffee;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -13,7 +16,7 @@ import android.widget.TextView;
 public class customizeDrinkActivity extends AppCompatActivity implements View.OnClickListener {
     ImageView img1,img2,img3,img4,img5,img6,img7;
     ImageButton add,remove;
-    TextView quantity, total_price, type;
+    TextView quantity, total_price, type, addToCart;
     int count = 1;
     double price = 1.90;
     double total = 1.90;
@@ -39,6 +42,7 @@ public class customizeDrinkActivity extends AppCompatActivity implements View.On
         quantity = findViewById(R.id.quantity);
         total_price = findViewById(R.id.total_price);
         type = findViewById(R.id.coffee_type);
+        addToCart = findViewById(R.id.add_to_cart);
         if (getIntent().getStringExtra("coffee").equals("capp"))
             type.setText("Cappuccino");
 
@@ -51,6 +55,15 @@ public class customizeDrinkActivity extends AppCompatActivity implements View.On
         img7.setOnClickListener(this);
         add.setOnClickListener(this);
         remove.setOnClickListener(this);
+        addToCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.putExtra("price", Double.toString(total));
+                setResult(Activity.RESULT_OK, intent);
+                finish();
+            }
+        });
     }
 
     @Override
