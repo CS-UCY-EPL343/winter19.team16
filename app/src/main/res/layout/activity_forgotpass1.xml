@@ -63,7 +63,7 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="22dp"
                 android:layout_marginTop="12dp"
                 android:background="#00000000"
                 android:hint="Email:"
@@ -73,7 +73,7 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
+                android:layout_marginTop="2dp"
                 android:background="#00000000"
                 android:textColorHint="#4b5461"
                 android:textSize="15sp" />
@@ -83,7 +83,7 @@
             <TextView
                 android:layout_gravity="bottom"
                 android:gravity="center"
-                android:layout_marginTop="420dp"
+                android:layout_marginTop="440dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Send Email"
