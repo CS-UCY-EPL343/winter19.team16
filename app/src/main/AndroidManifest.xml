@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Acknowledgement:
-Cold coffee icon  made by Linector from www.flaticon.com-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.team16.ecoffee">
@@ -13,13 +11,15 @@ Cold coffee icon  made by Linector from www.flaticon.com-->
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Feedback"
-                    android:exported="true"/>
-
+        <activity android:name=".forgotpass1"
+            android:exported="true"
+            ></activity>
+        <activity
+            android:name=".Feedback"
+            android:exported="true" />
         <activity
             android:name=".orderActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".SignUp"
             android:exported="true"
@@ -27,15 +27,16 @@ Cold coffee icon  made by Linector from www.flaticon.com-->
         <activity
             android:name=".activity_history"
             android:exported="true"
-            android:label="@string/title_activity_sign_up"/>
+            android:label="@string/title_activity_sign_up" />
         <activity
             android:name=".Aboutus"
-            android:exported="true"/>
-	    <activity
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:label="MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -45,9 +46,9 @@ Cold coffee icon  made by Linector from www.flaticon.com-->
             android:label="MainMenu" />
         <activity
             android:name=".customizeDrinkActivity"
+            android:excludeFromRecents="true"
             android:exported="true"
-            android:theme = "@style/Theme.AppCompat.Dialog"
-            android:excludeFromRecents="true"/>
+            android:theme="@style/Theme.AppCompat.Dialog" />
     </application>
 
 </manifest>
