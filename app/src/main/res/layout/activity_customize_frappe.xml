@@ -43,10 +43,8 @@
                     android:layout_weight="2"
                     android:gravity="center"
                     android:text="@string/preferences"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textColor="@color/black"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
+                    android:textColor="#3e4a59"
+                    android:textSize="30sp" />
 
             </LinearLayout>
 

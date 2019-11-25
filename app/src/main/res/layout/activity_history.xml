@@ -12,15 +12,13 @@
         android:id="@+id/preferences"
         android:layout_width="411dp"
         android:layout_height="59dp"
-        android:background="@color/white"
         android:drawableLeft="@drawable/ic_chevron_left_black_24dp"
         android:clickable="false"
         android:gravity="center"
         android:text="Orders History"
-        android:textColor="#000000"
+        android:textColor="#3e4a59"
         android:textIsSelectable="false"
-        android:textSize="30sp"
-        android:textStyle="bold"/>
+        android:textSize="30sp" />
 
     <ImageView
         android:id="@+id/logo"

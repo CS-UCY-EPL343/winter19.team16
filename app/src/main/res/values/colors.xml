@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="white">#FFFFFF</color>
+    <color name="white">#FAFAFA</color>
     <color name="black">#000000</color>
     <color name="brown">#9E6D27</color>
     <color name="my_spinner_text_color">#000000</color>

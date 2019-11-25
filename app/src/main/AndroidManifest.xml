@@ -18,11 +18,24 @@
         <activity
             android:name=".Feedback"
             android:exported="true" />
+        <activity android:name=".Emailsend"></activity>
+        <activity android:name=".Thankyou" />
         <activity
-            android:name=".orderActivity"
+            android:name=".forgotpass1"
+            android:exported="true" />
+        <activity android:name=".forgotpass1"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".Feedback"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".orderActivity"
+            android:exported="true" />
         <activity
             android:name=".SignUp"
             android:exported="true"
