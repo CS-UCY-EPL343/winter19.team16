@@ -14,29 +14,26 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/rect1"
+            android:gravity="center"
+            android:text="ORDER "
+            android:layout_marginTop="90dp"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="219dp" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="800dp"
-        android:layout_height="500dp"
-        app:srcCompat="@mipmap/logo_foreground"
-        tools:layout_editor_absoluteX="-195dp"
-        tools:layout_editor_absoluteY="-166dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@drawable/rect1"
-        android:gravity="center"
-        android:text="ORDER "
-        android:textColor="#ffffff"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="219dp" />
-
-    <TextView
+        <TextView
         android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,6 +43,7 @@
         android:text="ABOUT US"
         android:textColor="#ffffff"
         android:textSize="24sp"
+            android:layout_marginTop="20dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="324dp" />
 
@@ -59,6 +57,7 @@
         android:text="CREDIT"
         android:textColor="#ffffff"
         android:textSize="24sp"
+        android:layout_marginTop="20dp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="424dp" />
 
@@ -70,10 +69,13 @@
         android:background="@drawable/rect1"
         android:gravity="center"
         android:text="HISTORY"
+        android:layout_marginTop="20dp"
         android:textColor="#ffffff"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="518dp" />
 
-</LinearLayout>
+
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
