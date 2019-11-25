@@ -18,17 +18,17 @@
         <activity
             android:name=".Feedback"
             android:exported="true" />
-        <activity android:name=".Emailsend"></activity>
-        <activity android:name=".Thankyou" />
         <activity
-            android:name=".forgotpass1"
-            android:exported="true" />
-        <activity android:name=".forgotpass1"
-            android:exported="true">
-
+            android:name=".Emailsend"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppCompat.Dialog">
         </activity>
         <activity
-            android:name=".Feedback"
+            android:name=".Thankyou"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppCompat.Dialog"/>
+        <activity
+            android:name=".forgotpass1"
             android:exported="true" />
         <activity
             android:name=".LoginActivity"
@@ -62,8 +62,8 @@
             android:label="MainMenu" />
         <activity
             android:name=".customizeDrinkActivity"
-            android:excludeFromRecents="true"
             android:exported="true"
+            android:excludeFromRecents="true"
             android:theme="@style/Theme.AppCompat.Dialog" />
     </application>
 
