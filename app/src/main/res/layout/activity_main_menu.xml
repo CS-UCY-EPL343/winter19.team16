@@ -6,68 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainMenu">
 
-    <customfonts.MyTextView_Roboto_Regular
-        android:id="@+id/myTextView_Roboto_Regular4"
-        android:layout_width="370dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@drawable/rect1"
-        android:capitalize="words"
-        android:editable="false"
-        android:gravity="center|center_horizontal"
-        android:text="About Us"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="#ffffff"
-        android:textSize="36sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="558dp" />
-
-    <customfonts.MyTextView_Roboto_Regular
-        android:id="@+id/myTextView_Roboto_Regular3"
-        android:layout_width="370dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@drawable/rect1"
-        android:capitalize="words"
-        android:editable="false"
-        android:gravity="center|center_horizontal"
-        android:text="Credit"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="#ffffff"
-        android:textSize="36sp"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="449dp" />
-
-    <customfonts.MyTextView_Roboto_Regular
-        android:id="@+id/myTextView_Roboto_Regular2"
-        android:layout_width="370dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@drawable/rect1"
-        android:capitalize="words"
-        android:editable="false"
-        android:gravity="center|center_horizontal"
-        android:text="History"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="#ffffff"
-        android:textSize="36sp"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="334dp" />
-
-    <customfonts.MyTextView_Roboto_Regular
-        android:layout_width="370dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@drawable/rect1"
-        android:capitalize="words"
-        android:editable="false"
-        android:gravity="center|center_horizontal"
-        android:text="Menu"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="#ffffff"
-        android:textSize="36sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="219dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     <ImageView
         android:id="@+id/imageView9"
@@ -76,4 +22,58 @@
         app:srcCompat="@mipmap/logo_foreground"
         tools:layout_editor_absoluteX="-195dp"
         tools:layout_editor_absoluteY="-166dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rect1"
+        android:gravity="center"
+        android:text="ORDER "
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rect1"
+        android:gravity="center"
+        android:text="ABOUT US"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="324dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rect1"
+        android:gravity="center"
+        android:text="CREDIT"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="424dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rect1"
+        android:gravity="center"
+        android:text="HISTORY"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="518dp" />
+
+</LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
