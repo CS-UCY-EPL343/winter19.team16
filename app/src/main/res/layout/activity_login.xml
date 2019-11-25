@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <customfonts.MyTextView_Roboto_Regular
+        android:id="@+id/myTextView_Roboto_Regular10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Forgot Password?"
+        android:textColor="#b98068"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="341dp" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c28e79"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <customfonts.EditText_Roboto_Regular
+        android:id="@+id/editText_Roboto_Regular2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:hint="Password"
+        android:textColorHint="#4b5461"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c28e79"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <customfonts.EditText_Roboto_Regular
+        android:id="@+id/editText_Roboto_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:hint="Email"
+        android:textColorHint="#4b5461"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="137dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="660dp" />
+
+    <customfonts.MyTextView_Roboto_Regular
+        android:id="@+id/myTextView_Roboto_Regular8"
+        android:layout_width="370"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rect1"
+        android:gravity="center"
+        android:text="Log In"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="567dp" />
+
+    <customfonts.MyTextView_Roboto_Regular
+        android:id="@+id/myTextView_Roboto_Regular7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="#b98068"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="649dp" />
+
+    <customfonts.MyTextView_Roboto_Regular
+        android:id="@+id/myTextView_Roboto_Regular6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Don’t have an account?"
+        android:textColor="#733e4a59"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+    <customfonts.MyTextView_Roboto_Regular
+        android:id="@+id/myTextView_Roboto_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome back!"
+        android:textColor="#3e4a59"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="59dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
