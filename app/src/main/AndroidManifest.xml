@@ -11,9 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".forgotpass1"
-            android:exported="true">
-        </activity>
+        <activity
+            android:name=".JCC"
+            android:exported="true"></activity>
+        <activity
+            android:name=".forgotpass1"
+            android:exported="true"></activity>
         <activity
             android:name=".Feedback"
             android:exported="true" />
@@ -22,10 +25,7 @@
             android:exported="true" />
         <activity
             android:name=".orderActivity"
-            android:exported="true">
-
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".SignUp"
             android:exported="true"
