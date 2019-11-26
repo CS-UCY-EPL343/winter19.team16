@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="#ffffff"
+    android:background="@color/white"
     android:orientation="vertical"
     android:theme="@android:style/Theme.Dialog"
     tools:context="com.team16.ecoffee.customizeDrinkActivity">

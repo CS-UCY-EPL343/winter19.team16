@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,94 +8,91 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:src="@drawable/logo" />
+
         <TextView
             android:id="@+id/order"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
             android:background="@drawable/rect1"
             android:gravity="center"
             android:text="ORDER "
-            android:layout_marginTop="90dp"
             android:textColor="#ffffff"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="-16dp"
-            tools:layout_editor_absoluteY="219dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"/>
-
+            tools:layout_editor_absoluteY="219dp" />
 
 
         <TextView
-        android:id="@+id/about"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@drawable/rect1"
-        android:gravity="center"
-        android:text="ABOUT US"
-        android:textColor="#ffffff"
-        android:textSize="24sp"
-            android:layout_marginTop="20dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="324dp"
+            android:id="@+id/history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rect1"
+            android:gravity="center"
+            android:text="HISTORY"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="324dp" />
 
-    <TextView
-        android:id="@+id/credit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@drawable/rect1"
-        android:gravity="center"
-        android:text="CREDIT"
-        android:textColor="#ffffff"
-        android:textSize="24sp"
-        android:layout_marginTop="20dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="424dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        <TextView
+            android:id="@+id/credit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rect1"
+            android:gravity="center"
+            android:text="CREDIT"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="424dp" />
 
-    <TextView
-        android:id="@+id/history"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@drawable/rect1"
-        android:gravity="center"
-        android:text="HISTORY"
-        android:layout_marginTop="20dp"
-        android:textColor="#ffffff"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="518dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rect1"
+            android:gravity="center"
+            android:text="ABOUT US"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="518dp" />
 
         <TextView
             android:id="@+id/logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:layout_marginTop="90dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
             android:background="#00000000"
             android:clickable="true"
             android:hint="Log out"
-            android:layout_marginRight="20dp"
             android:textColorHint="#c28e79"
             android:textSize="18sp"
             tools:layout_editor_absoluteX="253dp"
@@ -103,4 +100,4 @@
 
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

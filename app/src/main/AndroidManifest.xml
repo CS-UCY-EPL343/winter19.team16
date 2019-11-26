@@ -20,7 +20,9 @@
             android:name=".pay"
             android:exported="true" />
         <activity
-            android:name=".Emailsend" />
+            android:name=".Emailsend"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppCompat.Dialog" />
         <activity
             android:name=".JCC"
             android:exported="true" />
@@ -35,7 +37,13 @@
             android:exported="true" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".orderActivity"
             android:exported="true" />
@@ -50,22 +58,13 @@
             android:exported="true" />
         <activity
             android:name=".Thankyou"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
-            android:label="MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppCompat.Dialog" />
         <activity
             android:name=".MainMenu"
             android:exported="true" />
         <activity
             android:name=".customizeDrinkActivity"
-            android:exported="true"
             android:excludeFromRecents="true"
             android:theme="@style/Theme.AppCompat.Dialog" />
     </application>
