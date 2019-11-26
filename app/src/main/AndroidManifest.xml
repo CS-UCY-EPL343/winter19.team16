@@ -11,8 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".pay"></activity>
-        <activity android:name=".credit" />
+
+        <activity android:name=".credit"
+            android:exported="true"></activity>
         <activity
             android:name=".Emailsend"
             android:exported="true" />

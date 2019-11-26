@@ -39,7 +39,7 @@
             android:layout_height="80dp"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
-            app:srcCompat="@drawable/_Barcode_32896" />
+            app:srcCompat="@drawable/bar" />
 
         <TextView
             android:id="@+id/textView12"
