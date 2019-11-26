@@ -14,11 +14,17 @@
         <activity android:name=".credit"></activity>
         <activity android:name=".Payment" />
         <activity
+            android:name=".Emailsend"
+            android:exported="true"></activity>
+        <activity
             android:name=".JCC"
             android:exported="true" />
         <activity
             android:name=".forgotpass1"
             android:exported="true" />
+        <activity
+            android:name=".VerifyOrderActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".Feedback"
             android:exported="true" />
@@ -38,6 +44,9 @@
             android:label="@string/title_activity_sign_up" />
         <activity
             android:name=".Aboutus"
+            android:exported="true" />
+        <activity
+            android:name=".Thankyou"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

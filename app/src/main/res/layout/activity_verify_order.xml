@@ -17,7 +17,7 @@
         android:textColor="@color/grey"
         android:textSize="30sp"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonverify"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -25,6 +25,7 @@
         android:id="@+id/verify"
         android:layout_width="0dp"
         android:layout_height="50dp"
+        android:layout_marginTop="50dp"
         android:clickable="false"
         android:gravity="center"
         android:text="@string/verify_order"
@@ -33,7 +34,7 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/back_button2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
@@ -47,7 +48,7 @@
         app:srcCompat="@drawable/ic_chevron_left_black_24dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonverify"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"

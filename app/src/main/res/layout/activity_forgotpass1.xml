@@ -80,6 +80,7 @@
 
         </LinearLayout>
 
+
         <TextView
             android:id="@+id/send_email"
             android:layout_width="match_parent"
@@ -87,6 +88,7 @@
             android:layout_gravity="bottom"
             android:layout_marginTop="440dp"
             android:background="@drawable/rect1"
+            android:clickable="true"
             android:gravity="center"
             android:text="Send Email"
             android:textColor="#ffffff"

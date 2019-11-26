@@ -8,11 +8,22 @@
     tools:context=".activity_history">
 
 
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:contentDescription="@string/back"
+        app:layout_constraintBottom_toTopOf="@+id/item_scroll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_chevron_left_black_24dp" />
+
     <TextView
         android:id="@+id/preferences"
         android:layout_width="411dp"
         android:layout_height="59dp"
-        android:drawableLeft="@drawable/ic_chevron_left_black_24dp"
         android:clickable="false"
         android:gravity="center"
         android:text="Orders History"
