@@ -17,7 +17,7 @@ public class forgotpass1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgotpass1);
         send = findViewById(R.id.send_email);
-        back = findViewById(R.id.back_button);
+        back = (ImageButton)findViewById(R.id.back_button);
         send.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent(forgotpass1.this, Emailsend.class);

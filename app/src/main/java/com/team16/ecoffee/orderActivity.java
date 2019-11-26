@@ -3,14 +3,16 @@ package com.team16.ecoffee;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class orderActivity extends AppCompatActivity {
-    ImageButton back;
+    ImageButton back,checkout;
 
     double total;
 
@@ -22,7 +24,8 @@ public class orderActivity extends AppCompatActivity {
         Button freddoButton = findViewById(R.id.freddo_button);
         Button frappeButton = findViewById(R.id.frappe_button);
         Button cappButton = findViewById(R.id.capuccino_button);
-        back = findViewById(R.id.back_button);
+        back = (ImageButton)findViewById(R.id.back_button);
+        checkout = (ImageButton)findViewById(R.id.checkout);
         back.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 finish();
@@ -50,7 +53,14 @@ public class orderActivity extends AppCompatActivity {
                 startActivityForResult(intent, 0);
             }
         });
+        checkout.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(orderActivity.this, VerifyOrderActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
