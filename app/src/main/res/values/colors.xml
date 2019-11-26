@@ -4,4 +4,6 @@
     <color name="black">#000000</color>
     <color name="brown">#9E6D27</color>
     <color name="my_spinner_text_color">#000000</color>
+    <color name="grey">#3e4a59</color>
+
 </resources>

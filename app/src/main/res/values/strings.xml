@@ -19,7 +19,7 @@
     <string name="title_activity_order_menu">order_menu</string>
     <string name="title_home">Home</string>
     <string name="title_checkout">Checkout</string>
-    <string name="total">Total: €1.90</string>
+    <string name="total">Total: €0.00</string>
     <string name="item_menu">Item Menu</string>
     <string name="back">back</string>
     <string name="checkout">checkout</string>
@@ -30,4 +30,8 @@
     <string name="price">€1.90</string>
     <string name="logo">logo</string>
     <string name="cappucino">Cappuccino</string>
+    <string name="verify_order">Verify Order</string>
+    <string name="pay">Verify &amp; Pay</string>
+    <string name="total2">Total: €3.80</string>
+
 </resources>
