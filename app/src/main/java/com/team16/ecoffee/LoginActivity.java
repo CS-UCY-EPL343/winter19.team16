@@ -15,7 +15,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         forgot = findViewById(R.id.forgot);
-        login = findViewById(R.id.login);
+        login = findViewById(R.id.thankss);
         create = findViewById(R.id.create_acc);
         forgot.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 public class customizeDrinkActivity extends AppCompatActivity implements View.OnClickListener {
     ImageView img1,img2,img3,img4,img5,img6,img7;
-    ImageButton add,remove;
+    ImageButton add,remove,back;
     TextView quantity, total_price, type, addToCart;
     int count = 1;
     double price = 1.90;
@@ -29,7 +29,7 @@ public class customizeDrinkActivity extends AppCompatActivity implements View.On
             setContentView(R.layout.activity_customize_frappe);
         else
             setContentView(R.layout.activity_customize_freddo);
-
+        back= findViewById(R.id.back_button);
         img1=findViewById(R.id.img1);
         img2=findViewById(R.id.img2);
         img3=findViewById(R.id.img3);
@@ -61,6 +61,11 @@ public class customizeDrinkActivity extends AppCompatActivity implements View.On
                 Intent intent = new Intent();
                 intent.putExtra("price", Double.toString(total));
                 setResult(Activity.RESULT_OK, intent);
+                finish();
+            }
+        });
+        back.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
                 finish();
             }
         });

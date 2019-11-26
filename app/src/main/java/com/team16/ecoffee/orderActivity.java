@@ -6,11 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class orderActivity extends AppCompatActivity {
+    ImageButton back;
 
-        double total;
+    double total;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,13 @@ public class orderActivity extends AppCompatActivity {
         Button freddoButton = findViewById(R.id.freddo_button);
         Button frappeButton = findViewById(R.id.frappe_button);
         Button cappButton = findViewById(R.id.capuccino_button);
+        back = findViewById(R.id.back_button);
+        back.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                finish();
+
+            }
+        });
         freddoButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent(orderActivity.this, customizeDrinkActivity.class);
