@@ -27,7 +27,7 @@ public class MainMenu extends AppCompatActivity {
          });
         credit.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(MainMenu.this, orderActivity.class);
+                Intent intent = new Intent(MainMenu.this, credit.class);
                 startActivity(intent);
             }
         });
