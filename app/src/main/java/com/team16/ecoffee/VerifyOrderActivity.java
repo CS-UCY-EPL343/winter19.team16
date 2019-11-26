@@ -24,7 +24,7 @@ public class VerifyOrderActivity extends AppCompatActivity {
         });
         verify.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(VerifyOrderActivity.this, Feedback.class);
+                Intent intent = new Intent(VerifyOrderActivity.this, pay.class);
                 startActivityForResult(intent, 0);
             }
         });

@@ -12,14 +12,15 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name=".credit"
-            android:exported="true"></activity>
+        <activity
+            android:name=".credit"
+            android:exported="true">
+        </activity>
         <activity
             android:name=".pay"
             android:exported="true" />
         <activity
-            android:name=".Emailsend"
-            android:exported="true" />
+            android:name=".Emailsend" />
         <activity
             android:name=".JCC"
             android:exported="true" />
@@ -40,12 +41,10 @@
             android:exported="true" />
         <activity
             android:name=".SignUp"
-            android:exported="true"
-            android:label="@string/title_activity_sign_up" />
+            android:exported="true" />
         <activity
             android:name=".activity_history"
-            android:exported="true"
-            android:label="@string/title_activity_sign_up" />
+            android:exported="true"/>
         <activity
             android:name=".Aboutus"
             android:exported="true" />
@@ -63,12 +62,11 @@
         </activity>
         <activity
             android:name=".MainMenu"
-            android:exported="true"
-            android:label="MainMenu" />
+            android:exported="true" />
         <activity
             android:name=".customizeDrinkActivity"
-            android:excludeFromRecents="true"
             android:exported="true"
+            android:excludeFromRecents="true"
             android:theme="@style/Theme.AppCompat.Dialog" />
     </application>
 
