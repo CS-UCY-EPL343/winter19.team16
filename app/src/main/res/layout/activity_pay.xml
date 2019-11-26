@@ -165,14 +165,14 @@
             tools:layout_editor_absoluteY="568dp" />
 
 
-
         <TextView
             android:id="@+id/ty3"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
+            android:layout_marginLeft="200dp"
             android:layout_marginTop="0dp"
-            android:layout_marginRight="0dp"
+            android:layout_marginRight="10dp"
             android:background="@drawable/rect1"
             android:clickable="true"
             android:gravity="center"
@@ -180,7 +180,7 @@
             android:textColor="#ffffff"
             android:textSize="14sp"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="568dp" />
+            tools:layout_editor_absoluteY="0dp" />
 
         <ImageView
             android:id="@+id/imageView2"
